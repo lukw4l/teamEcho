@@ -6,5 +6,5 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'Lukas & Michael' + VERSION.major;
+  name = 'Lukas & Michael & Sven' + VERSION.major;
 }
