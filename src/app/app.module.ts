@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { MainComponent } from './main/main.component';
+import { ActionComponent } from './action/action.component';
+import { RetroComponent } from './retro/retro.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RetroQuestionService } from './retro/retro-question.service';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule],
+  declarations: [ AppComponent, HelloComponent, MainComponent, ActionComponent, RetroComponent ],
+  bootstrap:    [ AppComponent ],
+  providers: [RetroQuestionService]
 })
 export class AppModule { }
