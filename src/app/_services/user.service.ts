@@ -11,6 +11,7 @@ export class UserService {
   }
 
   register(user: User) {
+    console.log('HENLO3');
     return this.http.post(`/users/register`, user);
   }
 

@@ -44,10 +44,12 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit() {
+    console.log('HENLO');
     this.submitted = true;
 
     // stop here if form is invalid
     if (this.registerForm.invalid) {
+      console.log('HENLO ERROR');
       return;
     }
 

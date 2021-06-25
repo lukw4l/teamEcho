@@ -62,6 +62,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
     }
 
     function register() {
+      console.log('HENLO2');
+
       const user = body;
 
       if (users.find(x => x.username === user.username)) {

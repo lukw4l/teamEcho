@@ -1,0 +1,68 @@
+* {
+  font-family: Lato;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+/* Style inputs, select elements and textareas */
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style inputs, select elements and textareas */
+input[type='password'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the label for invalid feedback */
+.invalid-feedback {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: #ff0000;
+}
+
+/* Style the submit button */
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  margin: 12px 0px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the submit button */
+button:hover {
+  background-color: #02492f;
+  color: white;
+}
+
+a {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
