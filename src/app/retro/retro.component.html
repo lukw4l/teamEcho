@@ -1,3 +1,14 @@
-<p>
-RETRO works!
-</p>
+<br>
+<fieldset *ngFor="let question of questions" id="radio{{question.id}}">
+<hr>
+  <span class="question">
+  Frage {{question.id}}: <b>{{question.title}}</b>
+  </span>
+  <br>
+  <label *ngFor="let option of question.options" class="option">
+    <input type="radio" name="radio{{question.id}}">
+    <div class="box">
+      <span>{{option}}</span>
+    </div>
+  </label>
+</fieldset>

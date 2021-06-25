@@ -8,10 +8,12 @@ import { MainComponent } from './main/main.component';
 import { ActionComponent } from './action/action.component';
 import { RetroComponent } from './retro/retro.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RetroQuestionService } from './retro/retro-question.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule],
   declarations: [ AppComponent, HelloComponent, MainComponent, ActionComponent, RetroComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [RetroQuestionService]
 })
 export class AppModule { }

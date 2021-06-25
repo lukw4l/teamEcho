@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RetroQuestion } from './retro-question';
+import { RetroQuestionService } from './retro-question.service';
 
 @Component({
   selector: 'app-retro',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RetroComponent implements OnInit {
 
-  constructor() { }
+  questions: RetroQuestion[] = [];
+  constructor(questionService: RetroQuestionService) {
+    this.questions = questionService.getQuestions();
+   }
 
   ngOnInit() {
   }
