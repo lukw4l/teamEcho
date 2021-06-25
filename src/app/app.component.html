@@ -1,8 +1,9 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen!
-  <br>
-  Hier geht es los! Was geht? Das geht ab!
-</p>
-
-<table-basic-example></table-basic-example>
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/main">Main</a>
+  <a routerLink="/retro">Retro</a>
+  <a routerLink="/action">Ma&szlig;nahmen</a>
+  <a routerLink="/login">Login</a>
+  <a routerLink="/register">Registrieren</a>
+</nav>
+<router-outlet></router-outlet>

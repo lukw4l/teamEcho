@@ -1,0 +1,29 @@
+<br>
+
+<form [formGroup]="retroForm" (ngSubmit)="onSubmit()">
+  <label>RetroId: 
+  <input type="text" name="retroId" id="retroId" formControlName="retroId"/>
+</label>
+  <br>
+  <label>UserId: 
+  <input type="text" name="userId" id="userId" formControlName="userId"/>
+</label>
+  <br>
+
+  <fieldset *ngFor="let question of questions" id="radio{{question.ID}}">
+    <hr>
+    <span class="question">
+  Frage {{question.ID}}: <b>{{question.Title}}</b>
+  </span>
+    <br>
+    <label *ngFor="let option of question.options; let index = index" class="option">
+    <input type="radio" value="{{index}}" name="radio{{question.ID}}" formControlName="radio{{question.ID}}">
+    <div class="box">
+      <span>{{option}}</span>
+    </div>
+  </label>
+  </fieldset>
+
+  <button type="submit">Fertig!</button>
+
+</form>
