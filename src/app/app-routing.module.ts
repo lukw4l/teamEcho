@@ -10,19 +10,23 @@ import { ActionComponent } from './action/action.component';
 import { AuthGuard } from './_helpers';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/main', pathMatch: 'full', canActivate: [AuthGuard] },
+  {
+    path: '',
+    redirectTo: '/main',
+    pathMatch: 'full' /*, canActivate: [AuthGuard]*/
+  },
   { path: 'main', component: MainComponent },
   { path: 'retro', component: RetroComponent },
   { path: 'action', component: ActionComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  
+
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}
