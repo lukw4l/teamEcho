@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { TableBasicExample } from './table-basic-example';
 
 import { MainComponent } from './main/main.component';
 import { ActionComponent } from './action/action.component';
@@ -30,7 +31,8 @@ import { RegisterComponent } from './register/register.component';
     ActionComponent,
     RetroComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    TableBasicExample
   ],
   bootstrap: [AppComponent],
   providers: [RetroQuestionService]
