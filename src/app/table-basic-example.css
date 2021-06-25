@@ -1,0 +1,39 @@
+table {
+  width: 90%;
+  font-family: Arial;
+}
+
+.mat-column-position {
+  border-right: 1px solid;
+  border-color: #00000042;
+  border-right-color: #00000023;
+  text-align: left;
+}
+
+.mat-column-massnahme {
+  padding-left: 20px;
+  border-right: 1px solid;
+  border-color: #00000042;
+  border-right-color: #00000023;
+  text-align: left;
+}
+
+.mat-column-zieldatum {
+  border-right: 1px solid;
+  border-color: #00000042;
+  border-right-color: #00000023;
+  text-align: center;
+}
+
+.mat-column-prio {
+  border-right: 1px solid;
+  border-color: #00000042;
+  border-right-color: #00000023;
+  text-align: center;
+}
+
+.mat-column-erledigt {
+  border-color: #00000042;
+  border-right-color: #00000023;
+  text-align: center;
+}
